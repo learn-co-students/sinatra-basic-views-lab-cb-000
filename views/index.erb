@@ -8,4 +8,35 @@
   <body>
       <p> 97 Bowling Alley Lane, Boulder CO </p>
   </body>
+
+  <h1><%= "I love " + "Ruby!!" %></h1>
+  <h2><%= " 1 + 1 = " %>
+  <%= 1 + 1 %></h2>
+
+  <% if 1 == 2 %>
+    <p>1 equals 2.</p>
+  <% else %>
+    <p>1 does not equal 2.</p>
+  <% end %>
+
+  <% logged_in = true %>
+  <% if logged_in == true %>
+    <a href="/logout">Click here to Log Out</a>
+  <% else %>
+    <a href="/login">Click here to Log In</a>
+  <% end %>
+
+  <ul>
+    <% squares = [1, 4, 9, 16] %>
+    <% squares.each do |square| %>
+      <li><%= square %></li>
+    <% end %>
+  </ul>
+
+  <% wall_posts = ["First post", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+  <ul>
+    <% wall_posts.each do |post| %>
+      <li><%= post %></li>
+    <% end %>
+  </ul>
 </html>
